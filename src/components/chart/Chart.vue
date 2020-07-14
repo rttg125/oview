@@ -191,7 +191,8 @@ export default {
     },
     reRender() {
       if (this.chart != null) {
-        window.location.reload();
+        this.chart && this.chart.destroy();
+        this.render()
       }
     },
     colorFieldName(colorField) {
