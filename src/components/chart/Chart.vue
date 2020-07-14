@@ -191,7 +191,6 @@ export default {
     },
     reRender() {
       if (this.chart != null) {
-        return false;
         //this.chart && this.chart.destroy();
         //this.render()
       }
